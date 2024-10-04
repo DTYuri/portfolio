@@ -27,3 +27,167 @@ nav ul {
     list-style: none;
     margin-top: 1rem;
 }
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #007BFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+}
+
+.experience-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.experience {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.qualifications-list {
+    list-style: none;
+    text-align: left;
+}
+
+.qualifications-list li {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.contact-buttons {
+    margin-top: 1rem;
+}
+
+.contact-buttons .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-buttons .btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+/*Retornar ao topo*/
+.back-to-top {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.back-to-top .btn {
+    background-color: #007BFF;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.education-list {
+    list-style: none;
+    text-align: left;
+}
+
+.education-list li {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
