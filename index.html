@@ -24,7 +24,7 @@
             </nav>
         </div>
     </header>
-    
+
     <section id="about" class="section">
         <div class="container about-section">
             <div class="profile-photo">
@@ -40,3 +40,93 @@
             </div>
         </div>
     </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experiências Profissionais</h2>
+            <div class="experience-grid">
+                <div class="experience">
+                    <h3>Aux. Escritório - Prefeitura Municipal de Passo Fundo - RS</h3>
+                    <h3>11/11/2018 - 11/11/2020</h3>
+                    <p>Realização de lançamentos digitais, geração de notas, lançamento de notas, controle de frotas veiculares, geração de planilhas e documentos.</p>
+                </div>
+                <div class="experience">
+                    <h3>Assistente administrativo - Rede de Farmácias São João</h3>
+                    <h3>22/08/2022 - o momento</h3>
+                    <p>Atuo no setor da Gestão de Demanda, realizando atividades como: análise e gestão de indicadores; análise de dados. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Formação Acadêmica</h2>
+            <ul class="education-list">
+                <li>Cursando Ciência da Computação - Atitus Educação (2024 - o momento)</li>
+                <li>Ensino médio - Instituto Estadual Cardeal Arcoverde (2008 - 2020)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="qualifications" class="section">
+        <div class="container">
+            <h2>Qualificações</h2>
+            <ul class="qualifications-list">
+                <li>Certificação de Qualificação em Desenvolvimento de Aplicações Júnior - Atitus Educação (2024)</li>
+                <li>Curso de Ciência de Dados (BI, Big Data & Analytics)  - Anhanguera (2023)</li>
+                <li>Curso de Gestão pessoal e profissional - Instituto Mix (2020)</li>
+                <li>Curso de Gestão Financeira - Instituto Mix (2020)</li>
+                <li>Conhecimento do pacote office avançado</li>
+                <li>Conhecimento de linguagens de programação</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: 1125371@atitus.edu.br</p>
+            <p>Telefone: (54) 99709-3303</p>
+            <div class="contact-buttons">
+                <a href="mailto:1125371@atitus.edu.br" class="btn">Enviar Email</a>
+                <a href="https://wa.me/5554997093303" class="btn">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#about" class="btn">Voltar ao Topo</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yuri Duarte Theisen. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const links = document.querySelectorAll('nav a[href^="#"]');
+
+        for (const link of links) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        const backToTopButton = document.querySelector('.back-to-top a');
+        backToTopButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetElement = document.querySelector('#about');
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
